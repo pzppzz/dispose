@@ -10,15 +10,15 @@
 # Install
 
 ```shell
-npm install dispose
+npm install signal-disposer
 # or
-yarn add dispose
+yarn add signal-disposer
 ```
 
 # Usage
 
 ```typescript
-import { Signal, DisposableGroup } from "dispose";
+import { Signal, DisposableGroup } from "signal-disposer";
 
 const signal = new Signal();
 signal.connect(() => {
