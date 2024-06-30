@@ -1,0 +1,54 @@
+{
+	"name": "signal-disposer",
+	"version": "1.0.0",
+	"description": "manage your signals easily!",
+	"main": "dist/index.min.js",
+	"module": "dist/index.es.js",
+	"type": "module",
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.MD",
+		"CHANGELOG.MD"
+	],
+	"author": "pzppzz",
+	"license": "MIT",
+	"homepage": "https://github.com/pzppzz/dispose#readme",
+	"keywords": [
+		"emitter",
+		"signal",
+		"event-emitter",
+		"dispose",
+		"disposable",
+		"event",
+		"listener",
+		"connect",
+		"trigger",
+		"pub/sub"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pzppzz/dispose.git"
+	},
+	"bugs": {
+		"url": "https://github.com/pzppzz/dispose/issues"
+	},
+	"scripts": {
+		"build": "rm -rf ./dist & rollup --config ./rollup.config.js",
+		"test": "vitest --config ./vitest.config.ts",
+		"coverage": "vitest run --coverage",
+		"lint": "prettier --write ."
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"@vitest/coverage-v8": "^1.6.0",
+		"prettier": "^3.3.2",
+		"rollup": "^4.18.0",
+		"tslib": "^2.6.3",
+		"typescript": "^5.5.2",
+		"vitest": "^1.6.0"
+	}
+}

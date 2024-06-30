@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		/* Visit https://aka.ms/tsconfig.json to read more about this file */
+		"target": "es5",
+		"lib": ["ES2016", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"checkJs": false,
+		"declaration": true,
+		"declarationDir": "dist",
+		"sourceMap": true,
+		"outDir": "dist",
+		"rootDir": "./src"
+	},
+	"exclude": ["src/**/*.test.ts", "dist", "node_modules", "*.config.ts"]
+}
